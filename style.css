@@ -340,3 +340,34 @@ body::after{
     }
 
 }
+.next-btn{
+
+display:inline-block;
+
+margin-top:40px;
+
+margin-bottom:20px;
+
+padding:16px 35px;
+
+background:linear-gradient(45deg,#ff4d94,#ff7eb8);
+
+color:white;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+box-shadow:0 15px 35px rgba(255,77,148,.25);
+
+}
+
+.next-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 20px 45px rgba(255,77,148,.35);
+
+}
