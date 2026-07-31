@@ -371,3 +371,44 @@ transform:translateY(-5px);
 box-shadow:0 20px 45px rgba(255,77,148,.35);
 
 }
+/* ==========================================
+   FLOATING HEARTS
+========================================== */
+
+.floating-heart{
+
+    position:fixed;
+
+    bottom:-40px;
+
+    color:#ff4d94;
+
+    opacity:.6;
+
+    pointer-events:none;
+
+    z-index:999;
+
+    animation:heartRise linear forwards;
+
+}
+
+@keyframes heartRise{
+
+    from{
+
+        transform:translateY(0) scale(.8);
+
+        opacity:.7;
+
+    }
+
+    to{
+
+        transform:translateY(-120vh) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
