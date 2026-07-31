@@ -1,0 +1,443 @@
+/* ==========================================
+   LOVE LETTER PAGE
+========================================== */
+
+body{
+
+    background:linear-gradient(135deg,#ffd9ea,#fff3f8);
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+/* Main */
+
+.letter-page{
+
+    width:100%;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+/* Heading */
+
+.letter-page h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:4rem;
+
+    color:#ff3f90;
+
+    margin-bottom:15px;
+
+}
+
+.letter-page p{
+
+    color:#555;
+
+    margin-bottom:60px;
+
+}
+
+/* =============================
+        GIFT
+============================= */
+
+.gift-container{
+
+    margin-bottom:50px;
+
+}
+
+#giftBox{
+
+    width:170px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    animation:giftFloat 3s ease-in-out infinite;
+
+}
+
+#giftBox img{
+
+    width:100%;
+
+}
+
+#giftBox:hover{
+
+    transform:scale(1.08);
+
+}
+
+@keyframes giftFloat{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+/* =============================
+     ENVELOPE
+============================= */
+
+#envelopeContainer{
+
+    display:none;
+
+    animation:fadeIn .7s;
+
+}
+
+#envelope{
+
+    width:320px;
+
+    height:210px;
+
+    background:#f6dcb5;
+
+    position:relative;
+
+    border-radius:12px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.5s;
+
+}
+
+#envelope:hover{
+
+    transform:translateY(-6px);
+
+}
+
+#envelope::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:0;
+
+    margin:auto;
+
+    width:0;
+
+    height:0;
+
+    border-left:160px solid transparent;
+
+    border-right:160px solid transparent;
+
+    border-top:110px solid #efd2a6;
+
+}
+
+.seal{
+
+    position:absolute;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:#d62839;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+
+}
+
+/* =============================
+        PAPER
+============================= */
+
+#paper{
+
+    display:none;
+
+    margin-top:40px;
+
+    width:90%;
+
+    max-width:700px;
+
+    animation:paperOpen 1s ease;
+
+}
+
+.paper-content{
+
+    background:#d8b98d;
+
+    background-image:
+
+    radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);
+
+    background-size:18px 18px;
+
+    border-radius:10px;
+
+    padding:60px;
+
+    position:relative;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.25);
+
+    font-family:'Cormorant Garamond',serif;
+
+}
+
+/* Burn Effect */
+
+.paper-content::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+border-radius:10px;
+
+box-shadow:
+
+inset 0 0 30px rgba(80,40,10,.25);
+
+pointer-events:none;
+
+}
+
+/* Heading */
+
+.paper-content h2{
+
+font-family:'Great Vibes',cursive;
+
+font-size:3rem;
+
+margin-bottom:35px;
+
+color:#6a3412;
+
+}
+
+/* Letter */
+
+#letterText{
+
+text-align:left;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#44250d;
+
+white-space:pre-line;
+
+min-height:300px;
+
+}
+
+/* =============================
+      BACK BUTTON
+============================= */
+
+.back-btn{
+
+margin-top:60px;
+
+padding:16px 34px;
+
+border-radius:50px;
+
+background:#ff4d94;
+
+color:white;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.back-btn:hover{
+
+background:#ff2e81;
+
+transform:translateY(-4px);
+
+}
+
+/* =============================
+        OPEN
+============================= */
+
+.openGift{
+
+animation:giftOpen .8s forwards;
+
+}
+
+@keyframes giftOpen{
+
+0%{
+
+transform:scale(1);
+
+}
+
+40%{
+
+transform:scale(.85);
+
+}
+
+70%{
+
+transform:scale(1.15);
+
+}
+
+100%{
+
+opacity:0;
+
+transform:scale(0);
+
+}
+
+}
+
+@keyframes paperOpen{
+
+from{
+
+opacity:0;
+
+transform:translateY(120px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =============================
+      RESPONSIVE
+============================= */
+
+@media(max-width:768px){
+
+.letter-page h1{
+
+font-size:2.7rem;
+
+}
+
+.paper-content{
+
+padding:35px 25px;
+
+}
+
+.paper-content h2{
+
+font-size:2.2rem;
+
+}
+
+#letterText{
+
+font-size:1.15rem;
+
+}
+
+#envelope{
+
+width:260px;
+
+height:170px;
+
+}
+
+#envelope::before{
+
+border-left:130px solid transparent;
+
+border-right:130px solid transparent;
+
+border-top:90px solid #efd2a6;
+
+}
+
+}
