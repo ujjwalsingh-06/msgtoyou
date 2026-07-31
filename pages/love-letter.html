@@ -4,101 +4,76 @@
 <head>
 
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Love Letter ❤️</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../style.css">
-
     <link rel="stylesheet" href="../css/animations.css">
-
     <link rel="stylesheet" href="../css/letter.css">
 
 </head>
 
 <body>
 
-    <!-- Background -->
+<div class="letter-page">
 
-    <div class="letter-bg"></div>
+<h1>A Love Letter For You ❤️</h1>
 
-    <!-- Hearts -->
+<p>Click the gift to open your surprise...</p>
 
-    <div class="floating-hearts"></div>
+<!-- Gift -->
 
-    <!-- Main -->
+<div class="gift-container">
 
-    <main class="letter-page">
+<div id="giftBox">
 
-        <h1>
+<img src="../assets/images/gift.png" alt="Gift">
 
-            A Letter For You ❤️
+</div>
 
-        </h1>
+</div>
 
-        <p class="subtitle">
+<!-- Envelope -->
 
-            Open the envelope...
+<div id="envelopeContainer">
 
-        </p>
+<div id="envelope">
 
-        <!-- Envelope -->
+<div class="seal">❤️</div>
 
-        <div id="envelope">
+</div>
 
-            <div class="envelope-top"></div>
+</div>
 
-            <div class="envelope-body"></div>
+<!-- Paper -->
 
-            <div class="heart-seal">
+<div id="paper">
 
-                ❤️
+<div class="paper-content">
 
-            </div>
+<h2>My Dearest Vrityanshi ❤️</h2>
 
-        </div>
+<div id="letterText"></div>
 
-        <!-- Letter -->
+</div>
 
-        <div id="letter">
+</div>
 
-            <div class="paper">
+<a href="../index.html" class="back-btn">
 
-                <h2>
+← Back
 
-                    My Dearest Vrityanshi ❤️
+</a>
 
-                </h2>
+</div>
 
-                <div id="letterText"></div>
-
-            </div>
-
-        </div>
-
-        <!-- Back -->
-
-        <a href="../index.html"
-            class="back-btn">
-
-            ← Back To Home
-
-        </a>
-
-    </main>
-
-    <script src="../js/letter.js"></script>
+<script src="../js/letter.js"></script>
 
 </body>
 
