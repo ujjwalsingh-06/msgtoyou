@@ -143,3 +143,54 @@
     }
 
 }
+/* ==========================================
+   RIPPLE EFFECT
+========================================== */
+
+.gift-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.gift-ripple{
+
+    position:absolute;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.7);
+
+    transform:translate(-50%,-50%);
+
+    animation:ripple .6s linear;
+
+    pointer-events:none;
+
+}
+
+@keyframes ripple{
+
+    from{
+
+        width:20px;
+        height:20px;
+        opacity:.8;
+
+    }
+
+    to{
+
+        width:450px;
+        height:450px;
+        opacity:0;
+
+    }
+
+}
