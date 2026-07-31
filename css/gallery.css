@@ -1,0 +1,180 @@
+/* ==========================================
+   GALLERY SECTION
+========================================== */
+
+.gallery-section{
+
+    padding:120px 0;
+
+    overflow:hidden;
+
+    background:linear-gradient(180deg,#fff4fa,#ffe8f3);
+
+}
+
+.gallery-section h2{
+
+    text-align:center;
+
+    color:#ff3d8d;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:4rem;
+
+    margin-bottom:70px;
+
+}
+
+/* Wrapper */
+
+.gallery-wrapper{
+
+    width:100%;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* Fade Edges */
+
+.gallery-wrapper::before,
+.gallery-wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    width:180px;
+
+    height:100%;
+
+    z-index:10;
+
+}
+
+.gallery-wrapper::before{
+
+    left:0;
+
+    background:linear-gradient(to right,#fff4fa,transparent);
+
+}
+
+.gallery-wrapper::after{
+
+    right:0;
+
+    background:linear-gradient(to left,#fff4fa,transparent);
+
+}
+
+/* Track */
+
+.gallery-track{
+
+    display:flex;
+
+    gap:30px;
+
+    width:max-content;
+
+    animation:galleryMove 45s linear infinite;
+
+}
+
+/* Pause on Hover */
+
+.gallery-wrapper:hover .gallery-track{
+
+    animation-play-state:paused;
+
+}
+
+/* Images */
+
+.gallery-track img{
+
+    width:320px;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    flex-shrink:0;
+
+    border:6px solid rgba(255,255,255,.6);
+
+    box-shadow:
+
+    0 20px 50px rgba(255,77,148,.18);
+
+    transition:.45s;
+
+}
+
+/* Hover */
+
+.gallery-track img:hover{
+
+    transform:
+
+    scale(1.08)
+
+    rotate(-2deg);
+
+    box-shadow:
+
+    0 30px 70px rgba(255,77,148,.35);
+
+}
+
+/* Infinite Animation */
+
+@keyframes galleryMove{
+
+    from{
+
+        transform:translateX(0);
+
+    }
+
+    to{
+
+        transform:translateX(-50%);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.gallery-track{
+
+animation-duration:30s;
+
+}
+
+.gallery-track img{
+
+width:220px;
+
+height:300px;
+
+}
+
+.gallery-section h2{
+
+font-size:2.7rem;
+
+}
+
+}
