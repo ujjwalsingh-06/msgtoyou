@@ -1,0 +1,326 @@
+/* ==========================================
+   FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   FADE IN
+========================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   ZOOM IN
+========================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   FLOAT
+========================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   HEART BEAT
+========================================== */
+
+@keyframes heartbeat{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    20%{
+
+        transform:scale(1.08);
+
+    }
+
+    40%{
+
+        transform:scale(.95);
+
+    }
+
+    60%{
+
+        transform:scale(1.1);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================
+   GLOW
+========================================== */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:0 0 15px rgba(255,77,148,.25);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 40px rgba(255,77,148,.55);
+
+    }
+
+    100%{
+
+        box-shadow:0 0 15px rgba(255,77,148,.25);
+
+    }
+
+}
+
+/* ==========================================
+   ROTATE
+========================================== */
+
+@keyframes rotateSlow{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   SHINE
+========================================== */
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:120%;
+
+    }
+
+}
+
+/* ==========================================
+   BOUNCE
+========================================== */
+
+@keyframes bounce{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+/* ==========================================
+   POP
+========================================== */
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.6);
+
+        opacity:0;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   SLIDE LEFT
+========================================== */
+
+@keyframes slideLeft{
+
+    from{
+
+        transform:translateX(100px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   SLIDE RIGHT
+========================================== */
+
+@keyframes slideRight{
+
+    from{
+
+        transform:translateX(-100px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================
+   FLOATING HEART
+========================================== */
+
+.floating-heart{
+
+    position:fixed;
+
+    color:#ff4d94;
+
+    font-size:22px;
+
+    pointer-events:none;
+
+    animation:heartFly 6s linear forwards;
+
+    z-index:999;
+
+}
+
+@keyframes heartFly{
+
+    from{
+
+        transform:translateY(0) scale(.7);
+
+        opacity:1;
+
+    }
+
+    to{
+
+        transform:translateY(-100vh) scale(1.6);
+
+        opacity:0;
+
+    }
+
+}
